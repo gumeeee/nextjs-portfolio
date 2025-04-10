@@ -4,10 +4,10 @@ import Image from "next/image";
 import { TextAnimate } from "./magicui/text-animate";
 import { AnimatedSpan, Terminal, TypingAnimation } from "./magicui/terminal";
 
-const Intro = () => {
+const IntroTest = () => {
   return (
-    <div className="flex flex-col-reverse justify-center items-center gap-4 sm:flex-row lg:p-8">
-      <div className="flex flex-col lg:flex-row items-center gap-6 w-full">
+    <div className="grid grid-col-1 gap-2 items-center lg:p-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center w-full">
         <TextAnimate
           animation="blurIn"
           as={"h1"}
@@ -16,13 +16,13 @@ const Intro = () => {
           Olá! Me chamo Guilherme Moura
         </TextAnimate>
 
-        <div className="md:w-3/12 sm:w-full p-8 overflow-hidden">
+        <div className="w-full p-8 overflow-hidden">
           <Image
             src="/images/profile-dark-mode.jpeg"
             alt="Profile"
             width={144}
             height={144}
-            className="rounded-full border h-48 lg:w-48"
+            className="rounded-3xl border h-48 lg:w-48"
           />
         </div>
       </div>
@@ -32,7 +32,7 @@ const Intro = () => {
           <TypingAnimation className="font-bold capitalize">
             sobre mim
           </TypingAnimation>
-          <AnimatedSpan delay={2000} className="text-gray-400  mt-2 text-wrap">
+          <AnimatedSpan delay={2000} className="text-gray-600 mt-2 text-wrap">
             <span>
               ✔ Sou Dev fullstack, atualmente estagiando na área de
               Desenvolvimento na Secretária Municipal de urbanismo e
@@ -50,4 +50,4 @@ const Intro = () => {
   );
 };
 
-export default Intro;
+export default IntroTest;
