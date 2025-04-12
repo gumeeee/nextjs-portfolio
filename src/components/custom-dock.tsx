@@ -1,17 +1,10 @@
 "use client";
 
-import {
-  CalendarIcon,
-  HomeIcon,
-  MailIcon,
-  Moon,
-  PencilIcon,
-  Sun,
-} from "lucide-react";
+import { CalendarIcon, HomeIcon, MailIcon, PencilIcon } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import {
   Tooltip,
@@ -20,9 +13,9 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
-import { Dock, DockIcon } from "./magicui/dock";
 import { useTheme } from "next-themes";
 import IconThemes from "./icon-themes";
+import { Dock, DockIcon } from "./magicui/dock";
 
 export type IconProps = React.HTMLAttributes<SVGElement>;
 
