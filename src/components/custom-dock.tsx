@@ -94,11 +94,7 @@ const DATA = {
   },
 };
 
-export default function CustomDock({
-  orientation,
-}: {
-  orientation: "vertical" | "horizontal";
-}) {
+export default function CustomDock() {
   const { resolvedTheme, setTheme } = useTheme();
   const [isMobile, setIsMobile] = useState(false);
 
