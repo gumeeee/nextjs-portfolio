@@ -173,7 +173,7 @@ export default function CustomDock() {
           ))}
           <Separator
             orientation={isMobile ? "vertical" : "horizontal"}
-            className="h-full py-2"
+            className="h-full"
           />
           <DockIcon>
             <Tooltip>
